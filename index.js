@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
+app.use(cors({
+  origin: 'http://localhost:8000' // разрешает доступ с этого домена
+}));
+
 // список уникальных ключей
 const keys = [];
 
