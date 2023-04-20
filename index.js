@@ -246,7 +246,7 @@ app.delete('/endGame/:key', (req, res) => {
 });
 
 // слушаем порт
-const port = 8080;
+const port = 443;
 app.listen(port, () => {
     console.log('Server listening on port ${port}');
 });
